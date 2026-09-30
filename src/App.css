@@ -1,0 +1,727 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a1830;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+
+  padding: 0 3%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: #09162b;
+
+  border-bottom: 1px solid #26344a;
+
+  z-index: 1000;
+}
+
+.logo {
+  color: #ffffff;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #c7ced9;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   GENERAL PAGE
+========================================= */
+
+.page {
+  min-height: 100vh;
+
+  padding: 70px 0 0;
+}
+
+
+/* =========================================
+   PROFILE PAGE
+========================================= */
+
+.profile-page {
+  width: 100%;
+
+  min-height: 100vh;
+
+  padding-top: 70px;
+
+  background: #0a1830;
+
+  overflow: hidden;
+}
+
+.profile-content {
+  width: 100%;
+
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+
+  position: relative;
+}
+
+
+/* =========================================
+   LEFT BLUE SIDE
+========================================= */
+
+.profile-text {
+  width: 65%;
+
+  min-height: calc(100vh - 70px);
+
+  padding: 55px 4% 30px;
+
+  background: #0a1830;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.top-content {
+  width: 100%;
+}
+
+
+/* =========================================
+   COMPUTER SCIENCE STUDENT
+========================================= */
+
+.profile-title {
+  color: #eef1f5;
+
+  font-size: 38px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  white-space: nowrap;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   LINE UNDER TITLE
+========================================= */
+
+.title-line {
+  width: 82%;
+
+  height: 1px;
+
+  background: #58667b;
+
+  margin-top: 22px;
+
+  margin-bottom: 28px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.profile-description {
+  max-width: 600px;
+
+  color: #d0d6df;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.contact-info p {
+  color: #c4ccd7;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.contact-info .contact-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+
+/* =========================================
+   HI, I AM AYSHA
+========================================= */
+
+.big-name {
+  color: #f2f4f7;
+
+  font-size: 60px;
+
+  font-weight: 800;
+
+  line-height: 0.95;
+
+  letter-spacing: 1px;
+}
+
+.big-name div:first-child {
+  font-size: 0.65em;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================================
+   RIGHT GRAY SIDE
+========================================= */
+
+.profile-image-container {
+  width: 35%;
+
+  min-height: calc(100vh - 70px);
+
+  background: #34373c;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================
+   LARGE GRAY CIRCLE
+========================================= */
+
+.image-circle {
+  position: absolute;
+
+  width: 430px;
+
+  height: 430px;
+
+  border-radius: 50%;
+
+  background: #45484d;
+
+  z-index: 1;
+
+  /*
+     Center of circle stays exactly
+     on the blue/gray boundary.
+  */
+
+  left: 0;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* =========================================
+   LARGE PROFILE PHOTO
+========================================= */
+
+.profile-image {
+  position: absolute;
+
+  width: 390px;
+
+  height: 390px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 5px solid #777b82;
+
+  z-index: 2;
+
+  /*
+     Center of photo stays exactly
+     on the blue/gray boundary.
+  */
+
+  left: 0;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* =========================================
+   SKILLS AND WORK PAGES
+========================================= */
+
+.skills-page,
+.work-page {
+  min-height: 100vh;
+
+  padding: 130px 7% 80px;
+
+  background: #0a1830;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.page-heading {
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.page-heading h1 {
+  color: #f1f3f6;
+
+  font-size: 50px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 12px;
+}
+
+.page-heading p {
+  color: #9faaba;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-grid {
+  width: 100%;
+
+  max-width: 1300px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.skill-card {
+  height: 210px;
+
+  padding: 30px;
+
+  background: #34373c;
+
+  border: 1px solid #4b4f55;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #8b95a5;
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.skill-card h3 {
+  color: #dce1e8;
+
+  font-size: 28px;
+
+  font-weight: 600;
+
+  margin-bottom: 12px;
+}
+
+.skill-card p {
+  color: #b5bbc4;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   WORK
+========================================= */
+
+.projects-grid {
+  width: 100%;
+
+  max-width: 1300px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.project-card {
+  min-height: 320px;
+
+  padding: 35px;
+
+  background: #34373c;
+
+  border: 1px solid #4b4f55;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #8b95a5;
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.project-number {
+  color: #9aa1ac;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-bottom: 18px;
+}
+
+.project-card h2 {
+  color: #e1e5eb;
+
+  font-size: 22px;
+
+  margin-bottom: 16px;
+}
+
+.project-card p {
+  color: #b5bbc4;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin-bottom: 22px;
+
+  max-width: 400px;
+}
+
+.technology {
+  color: #9aa1ac;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #555a61;
+
+  width: 100%;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .profile-text {
+    width: 60%;
+  }
+
+  .profile-image-container {
+    width: 40%;
+  }
+
+  .profile-title {
+    font-size: 32px;
+  }
+
+  .profile-description {
+    font-size: 14px;
+  }
+
+  .big-name {
+    font-size: 52px;
+  }
+
+  .image-circle {
+    width: 390px;
+
+    height: 390px;
+  }
+
+  .profile-image {
+    width: 350px;
+
+    height: 350px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: 65px;
+
+    padding: 0 5%;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+
+  /* =====================================
+     PROFILE
+  ===================================== */
+
+  .profile-page {
+    padding-top: 65px;
+  }
+
+  .profile-content {
+    flex-direction: column;
+  }
+
+  .profile-text {
+    width: 100%;
+
+    min-height: 600px;
+
+    padding: 40px 7% 30px;
+  }
+
+  .profile-title {
+    font-size: 28px;
+
+    white-space: normal;
+  }
+
+  .title-line {
+    width: 100%;
+  }
+
+  .profile-description {
+    font-size: 14px;
+  }
+
+  .big-name {
+    font-size: 48px;
+  }
+
+  .profile-image-container {
+    width: 100%;
+
+    height: 500px;
+
+    min-height: 500px;
+  }
+
+
+  /* =====================================
+     MOBILE PHOTO
+  ===================================== */
+
+  .image-circle {
+    width: 330px;
+
+    height: 330px;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .profile-image {
+    width: 300px;
+
+    height: 300px;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+
+  /* =====================================
+     SKILLS + WORK
+  ===================================== */
+
+  .skills-page,
+  .work-page {
+    padding: 110px 5% 60px;
+  }
+
+  .page-heading {
+    margin-bottom: 40px;
+  }
+
+  .page-heading h1 {
+    font-size: 40px;
+  }
+
+  .page-heading p {
+    font-size: 13px;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    height: 190px;
+  }
+
+  .project-card {
+    min-height: 300px;
+  }
+}
